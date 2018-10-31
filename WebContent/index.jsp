@@ -18,7 +18,6 @@
 		</table>
 		<input type="submit" value="登录">
 		</div>
-			
 	</form>
 </body>
 </html>
