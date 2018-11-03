@@ -36,6 +36,7 @@ public class TopServlet extends HttpServlet {
 		String requestUsername = request.getParameter("requestUsername");
 		System.out.println(requestUsername);
 		HttpSession session = request.getSession();
+		session.setAttribute("name", 123);
 		User user = (User)session.getAttribute("user");
 		System.out.println("[TopServlet#session]:" + user);
 		session.setAttribute("sessionUsername", user.getUsername());

@@ -76,7 +76,11 @@
 		${status.count}, name=${stu.name} , age=${stu.age}<br>
 	</c:forEach>	
 	
-	
+	<% 
+		application.setAttribute("name", "addName");
+		application.setAttribute("name", "replace");
+		application.removeAttribute("name");
+	%>
 	
 </body>
 </html>
